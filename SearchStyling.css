@@ -1,0 +1,33 @@
+
+/* top level div container used when you need to center div*/
+.parent{
+    /* Center vertically and horizontally */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* div that holds google logo, search bar, submit button */
+#search{
+    text-align: center;
+    width: 100%;
+}
+
+#logo{
+    width: 250px;
+}
+
+/* Styling the text input of the form */
+input[type=text]{
+    width: 450px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+/* Styling the form button */
+input[type=submit]{
+    width: 100px;
+    border-radius: 4px; /* this gives elements round edges */
+}
