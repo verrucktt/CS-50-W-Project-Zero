@@ -1,0 +1,29 @@
+<!-- The starting of the csc50W hw 0
+---- Make a google front end with their specifications set here
+---- https://cs50.harvard.edu/web/2020/projects/0/search/
+-->
+<!DOCTYPE html>
+<html lang="en" style="background-color: #202124;">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="indexStyling.css">
+    </head>
+    <body>
+        <div class="parent">
+            <div id="search"> <!--Google told me to put a div inside of a div so I will leave this for now-->
+                <img id="logo" src="googlelogo.png" alt="Google Logo">
+                <form action="https://www.google.com/search">   <!-- action contains the server script that will process data-->
+                    <input type="text" name="q">                <!-- name is the type of data the server is expecting-->
+                    <br />                                      <!-- break in the page contents newline type of effect-->
+                    <br />                                      <!-- break in the page contents newline type of effect-->
+                    <input type="submit" value="Google Search"> <!-- this is saying this is a submit button-->
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--- 
+    To do an I'm feeling lucky search you must enter the following query
+    https://www.google.com/search?q={insert search term here}&btnI=I%27m+Feeling+Lucky
+->
