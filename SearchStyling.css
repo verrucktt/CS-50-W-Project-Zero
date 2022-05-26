@@ -22,26 +22,29 @@
 /* Styling the search bar */
 input[type=text]{
     width: 450px;
-    height: 40px;
-    padding-left: 15px;
+    height: 43px;
+    padding-left: 15px;          /* move text in search bar from the left 15 pixels */
     background-color: #202124; /* style the color of the search bar */
     color: white;              /* Style the text being inputted into the search bar */
+
+    
     border-radius: 25px;         /* Make the search bar have round edges */
     border-style: solid;         /* make border solid */
     border-color: #606367;     /* color of the border */
 }
 
+/* style the search bar when it is in focus*/
 input[type=text]:focus{
     outline: none;
     background-color: #303134;
     border-color: #303134;
 }
 
+/* style the search bar when it is in hovered over*/
 input[type=text]:hover{
     background-color: #303134;
     border-color: #303134;
 }
-
 
 /* Styling the form button */
 input[type=submit]{
