@@ -21,7 +21,7 @@
 
 /* Styling the search bar */
 input[type=text]{
-    width: 450px;
+    width: 500px;
     height: 43px;
     padding-left: 15px;          /* move text in search bar from the left 15 pixels */
     background-color: #202124; /* style the color of the search bar */
