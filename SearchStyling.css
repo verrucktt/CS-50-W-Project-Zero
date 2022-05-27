@@ -46,8 +46,26 @@ input[type=text]:hover{
     border-color: #303134;
 }
 
-/* Styling the form button */
+/* Styling the search buttons */
 input[type=submit]{
-    width: 100px;
-    border-radius: 12px; /* this gives elements round edges */
+    width: auto;
+    height: 40px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    margin-left: 20px;
+
+    border-radius: 8px;          /* this gives elements round edges */
+    background-color: #3D4042; /* color of the background */
+    border-style: hidden;          /* no boreder*/
+    color: white;              /* color of the text  on the buttons*/
+
+}
+
+input[type=submit]:hover{
+    border-style: solid;
+    border-color: #606367;
 }
