@@ -6,21 +6,23 @@
 <html lang="en" style="background-color: #202124;">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="SearchStyling.css">
+        <link rel="stylesheet" href="SearchStylingsass.css">
     </head>
     
     <body>
-        <div class="parent">
-            <div id="search"> <!--Google told me to put a div inside of a div so I will leave this for now-->
-                <img id="logo" src="googlelogo.png" alt="Google Logo">
+        <div class="parent">  <!--Div that spans the whole page-->
+            <div id="search"> <!--Div that holds logo, search bar, and search button-->
+
+                <img id="logo" src="googlelogo.png" alt="Google Logo"> 
                 <form action="https://www.google.com/search">   <!-- action contains the server script that will process data-->
                     <input type="text" name="q">                <!-- name is the type of data the server is expecting-->
                     <br />                                      <!-- break in the page contents newline type of effect-->
                     <br />                                      <!-- break in the page contents newline type of effect-->
 
-                    <input type="submit" value="Google Search">     <!-- this is saying this is a submit button-->
-                    <input type="submit" name="btnI" value="I'm Feeling Lucky"> <!-- This is the I'm feeling lucky button https://stackoverflow.com/questions/62869308/how-implement-im-feeling-lucky-in-html-->
+                    <input class="search-button" type="submit" value="Google Search">     <!-- this is saying this is a submit button-->
+                    <input class="feeling-lucky-button" type="submit" name="btnI" value="I'm Feeling Lucky"> <!-- This is the I'm feeling lucky button https://stackoverflow.com/questions/62869308/how-implement-im-feeling-lucky-in-html-->
                 </form>
+
             </div>
         </div>
     </body>

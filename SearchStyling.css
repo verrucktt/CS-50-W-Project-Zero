@@ -2,7 +2,7 @@
 /* top level div container used when you need to center div*/
 .parent{
     /* Center vertically and horizontally */
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 /* div that holds google logo, search bar, submit button */
 #search{
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 #logo{
