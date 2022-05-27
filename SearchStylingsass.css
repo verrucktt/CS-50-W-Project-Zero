@@ -1,0 +1,25 @@
+/*
+* Desc: Stying for the main page of google search mock up
+* Author: Emmanuel Bastidas
+* since: 05/27/2022
+* version: 0.01
+*/
+.basic-button, .feeling-lucky-button, .search-button {
+  width: auto;
+  height: 40px;
+  border-style: hidden;
+  border-radius: 8px;
+  background-color: #3D4042;
+  color: white;
+}
+
+.basic-button:hover, .feeling-lucky-button:hover, .search-button:hover {
+  border-style: solid;
+  border-color: #606367;
+}
+
+.search-button {
+  height: 40px;
+}
+
+/*# sourceMappingURL=SearchStylingsass.css.map */
