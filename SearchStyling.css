@@ -48,6 +48,16 @@ input[type=text]:hover{
 
 /* Styling the form button */
 input[type=submit]{
-    width: 100px;
-    border-radius: 12px; /* this gives elements round edges */
+    width: auto;
+    height:40px;
+    border-style: hidden;
+    border-radius: 8px;
+    background-color: #3D4042;
+    color: white;
+
+}
+
+input[type=submit]:hover{
+    border-style: solid;
+    border-color: #303134;
 }
