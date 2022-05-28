@@ -2,7 +2,7 @@
 /* top level div container used when you need to center div*/
 .parent{
     /* Center vertically and horizontally */
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 /* div that holds google logo, search bar, submit button */
 #search{
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 #logo{
@@ -46,15 +46,22 @@ input[type=text]:hover{
     border-color: #303134;
 }
 
-/* Styling the form button */
+/* Styling the search buttons */
 input[type=submit]{
     width: auto;
-    height:40px;
-    border-style: hidden;
-    border-radius: 8px;
-    background-color: #3D4042;
-    color: white;
+    height: 40px;
 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    margin-left: 20px;
+
+    border-radius: 8px;          /* this gives elements round edges */
+    background-color: #3D4042; /* color of the background */
+    border-style: hidden;          /* no boreder*/
+    color: white;              /* color of the text  on the buttons*/
 }
 
 input[type=submit]:hover{
