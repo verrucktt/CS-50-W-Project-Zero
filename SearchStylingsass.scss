@@ -12,8 +12,6 @@ $text-color: white;
 $searchbar-border-color: #606367;
 $searchbar-background-color: #202124;
 
-// creating styling for basic button
-
 
 .parent{
     width: 100vw;
@@ -22,11 +20,13 @@ $searchbar-background-color: #202124;
     justify-content: center;
 }
 
+
 .otherlinks{
     width: 100vw;
     height: auto;
     text-align: right;
 }
+
 
 /* div that holds google logo, search bar, submit button */
 #search{
@@ -35,9 +35,11 @@ $searchbar-background-color: #202124;
     width: 100vw;
 }
 
+
 #logo{
     width: 250px;
 }
+
 
 .basic-button{
     width: auto;
@@ -48,26 +50,32 @@ $searchbar-background-color: #202124;
     color: $text-color;
 }
 
+
 .basic-button:hover{
     border-style: solid;
     border-color: $button-border-color;
 }
+
 
 .search-button{
     @extend .basic-button;
     margin-right: 5px
 }
 
+
 .feeling-lucky-button{
     @extend .basic-button;
     margin-left: 5px;
 }
+
 
 .image-search-button{
     @extend .basic-button;
     margin-right: 5px;
 }
 
+
+/* default styling for search bar*/
 .search-bar{
     width: 500px;
     height: 43px;
@@ -78,6 +86,13 @@ $searchbar-background-color: #202124;
     border-radius: 25px;                    /* Make the search bar have round edges */
     border-style: solid;                    /* make border solid */
     border-color: $searchbar-border-color;  /* color of the border */
+}
+
+/* resize search bar when screen size is decreased*/
+@media screen and (max-width: 572px){
+    .search-bar{
+        width: 87vw;
+    }
 }
 
 .search-bar:hover{

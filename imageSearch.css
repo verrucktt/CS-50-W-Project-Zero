@@ -54,28 +54,40 @@
   margin-right: 5px;
 }
 
-/* default styling for search bar*/
-.search-bar, .search-bar:focus {
-  width: 500px;
-  height: 43px;
-  padding-left: 15px;
-  /* move text in search bar from the left 15 pixels */
-  background-color: #202124;
-  /* style the color of the search bar */
-  color: white;
-  /* Style the text being inputted into the search bar */
-  border-radius: 25px;
-  /* Make the search bar have round edges */
-  border-style: solid;
-  /* make border solid */
-  border-color: #606367;
-  /* color of the border */
-}
-
-/* resize search bar when screen size is decreased*/
-@media screen and (max-width: 572px) {
+@media screen and (min-width: 600px) {
   .search-bar, .search-bar:focus {
-    width: 87vw;
+    width: 500px;
+    height: 43px;
+    padding-left: 15px;
+    /* move text in search bar from the left 15 pixels */
+    background-color: #202124;
+    /* style the color of the search bar */
+    color: white;
+    /* Style the text being inputted into the search bar */
+    border-radius: 25px;
+    /* Make the search bar have round edges */
+    border-style: solid;
+    /* make border solid */
+    border-color: #606367;
+    /* color of the border */
+  }
+}
+@media screen and (max-width: 599px) {
+  .search-bar, .search-bar:focus {
+    width: 80%;
+    height: 43px;
+    padding-left: 15px;
+    /* move text in search bar from the left 15 pixels */
+    background-color: #202124;
+    /* style the color of the search bar */
+    color: white;
+    /* Style the text being inputted into the search bar */
+    border-radius: 25px;
+    /* Make the search bar have round edges */
+    border-style: solid;
+    /* make border solid */
+    border-color: #606367;
+    /* color of the border */
   }
 }
 .search-bar:hover, .search-bar:focus {
@@ -85,4 +97,4 @@
 
 .search-bar:focus {
   outline: none;
-}/*# sourceMappingURL=SearchStylingsass.css.map */
+}/*# sourceMappingURL=imageSearch.css.map */

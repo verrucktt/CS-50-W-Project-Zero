@@ -6,21 +6,28 @@
 <html lang="en" style="background-color: #202124;">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="SearchStyling.css">
+        <link rel="stylesheet" href="imageSearch.css">
     </head>
     
     <body>
-        <div class="parent">
+        <div class="grid">
+
+            <div class="otherlinks">
+                <button class="search-button"><a href="Search.html" style="color: white; text-decoration: none;">Google Search</a></button>
+            </div>
+
+
             <div id="search"> <!--Google told me to put a div inside of a div so I will leave this for now-->
                 <img id="logo" src="googlelogo.png" alt="Google Logo">
                 <form action="https://www.google.com/search">   <!-- action contains the server script that will process data-->
-                    <input type="text" name="q">                <!-- name is the type of data the server is expecting-->
+                    <input class="search-bar" type="text" name="q">                <!-- name is the type of data the server is expecting-->
                     <br />                                      <!-- break in the page contents newline type of effect-->
                     <br />                                      <!-- break in the page contents newline type of effect-->
 
-                    <input type="submit" value="Image Search">  <!-- Search button for Image Search-->
+                    <input class="image-search-button" type="submit" value="Image Search">  <!-- Search button for Image Search-->
                 </form>
             </div>
+
         </div>
     </body>
 </html>
