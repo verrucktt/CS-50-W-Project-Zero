@@ -20,6 +20,7 @@
 
 /* div that holds google logo, search bar, submit button */
 #search {
+  margin-top: 15vh;
   text-align: center;
   width: 100vw;
 }
@@ -28,7 +29,7 @@
   width: 250px;
 }
 
-.basic-button, .feeling-lucky-button, .search-button {
+.basic-button, .image-search-button, .feeling-lucky-button, .search-button {
   width: auto;
   height: 40px;
   border-style: hidden;
@@ -37,7 +38,7 @@
   color: white;
 }
 
-.basic-button:hover, .basic-button.search-bar:focus, .feeling-lucky-button:hover, .feeling-lucky-button.search-bar:focus, .search-button:hover, .search-button.search-bar:focus {
+.basic-button:hover, .basic-button.search-bar:focus, .image-search-button:hover, .image-search-button.search-bar:focus, .feeling-lucky-button:hover, .feeling-lucky-button.search-bar:focus, .search-button:hover, .search-button.search-bar:focus {
   border-style: solid;
   border-color: #606367;
 }
@@ -48,6 +49,10 @@
 
 .feeling-lucky-button {
   margin-left: 5px;
+}
+
+.image-search-button {
+  margin-right: 5px;
 }
 
 .search-bar, .search-bar:focus {
