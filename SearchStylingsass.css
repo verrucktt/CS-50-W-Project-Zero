@@ -7,9 +7,15 @@
 .parent {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
+}
+
+.otherlinks {
+  width: 100vw;
+  height: auto;
+  text-align: right;
 }
 
 /* div that holds google logo, search bar, submit button */
@@ -68,6 +74,4 @@
 
 .search-bar:focus {
   outline: none;
-}
-
-/*# sourceMappingURL=SearchStylingsass.css.map */
+}/*# sourceMappingURL=SearchStylingsass.css.map */
