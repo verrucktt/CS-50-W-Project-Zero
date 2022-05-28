@@ -5,35 +5,76 @@
 * version: 0.01
 */
 
-$color: blue;
+$button-border-color: #606367;
+$button-background-color: #3D4042;
+$text-color: white;
+
+$searchbar-border-color: #606367;
+$searchbar-background-color: #202124;
 
 // creating styling for basic button
+
+
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* div that holds google logo, search bar, submit button */
+#search{
+    text-align: center;
+    width: 100vw;
+}
+
+#logo{
+    width: 250px;
+}
+
 .basic-button{
     width: auto;
     height: 40px;
     border-style: hidden;
     border-radius: 8px;
-    background-color: #3D4042;
-    color: white;
+    background-color: $button-background-color;
+    color: $text-color;
 }
 
 .basic-button:hover{
     border-style: solid;
-    border-color: #606367;
+    border-color: $button-border-color;
 }
 
 .search-button{
     @extend .basic-button;
-
-    height: 40px;
+    margin-right: 5px
 }
 
 .feeling-lucky-button{
     @extend .basic-button;
-
-    
+    margin-left: 5px;
 }
 
 .search-bar{
+    width: 500px;
+    height: 43px;
+    padding-left: 15px;          /* move text in search bar from the left 15 pixels */
+    background-color: $searchbar-background-color; /* style the color of the search bar */
+    color: $text-color;          /* Style the text being inputted into the search bar */
 
+    border-radius: 25px;         /* Make the search bar have round edges */
+    border-style: solid;         /* make border solid */
+    border-color: $searchbar-border-color;     /* color of the border */
+}
+
+.search-bar:hover{
+    background-color: #303134;
+    border-color: #303134;
+}
+
+.search-bar:focus{
+    @extend .search-bar, :hover;
+    outline: none;
 }

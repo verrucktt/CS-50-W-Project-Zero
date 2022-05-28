@@ -4,6 +4,24 @@
 * since: 05/27/2022
 * version: 0.01
 */
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* div that holds google logo, search bar, submit button */
+#search {
+  text-align: center;
+  width: 100vw;
+}
+
+#logo {
+  width: 250px;
+}
+
 .basic-button, .feeling-lucky-button, .search-button {
   width: auto;
   height: 40px;
@@ -13,13 +31,43 @@
   color: white;
 }
 
-.basic-button:hover, .feeling-lucky-button:hover, .search-button:hover {
+.basic-button:hover, .basic-button.search-bar:focus, .feeling-lucky-button:hover, .feeling-lucky-button.search-bar:focus, .search-button:hover, .search-button.search-bar:focus {
   border-style: solid;
   border-color: #606367;
 }
 
 .search-button {
-  height: 40px;
+  margin-right: 5px;
+}
+
+.feeling-lucky-button {
+  margin-left: 5px;
+}
+
+.search-bar, .search-bar:focus {
+  width: 500px;
+  height: 43px;
+  padding-left: 15px;
+  /* move text in search bar from the left 15 pixels */
+  background-color: #202124;
+  /* style the color of the search bar */
+  color: white;
+  /* Style the text being inputted into the search bar */
+  border-radius: 25px;
+  /* Make the search bar have round edges */
+  border-style: solid;
+  /* make border solid */
+  border-color: #606367;
+  /* color of the border */
+}
+
+.search-bar:hover, .search-bar:focus {
+  background-color: #303134;
+  border-color: #303134;
+}
+
+.search-bar:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=SearchStylingsass.css.map */
