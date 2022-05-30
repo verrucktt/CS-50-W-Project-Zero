@@ -10,12 +10,14 @@
     </head>
     
     <body>
-        <div class="grid">
+        <div class="parent">  <!--May seem useless but screen lags when minimizing if I remove this-->
+            
             <div class="otherlinks">
-                <button class="basic-button"><a href="index.html" style="color: white; text-decoration: none;">Google Search</a></button>
+                <button class="basic-button" style="margin-right: 10px;"><a href="index.html" style="color: white; text-decoration: none;">Google Search</a></button>
             </div>
 
-            <div id="search"> <!--Google told me to put a div inside of a div so I will leave this for now-->
+            <div id="search"> 
+
                 <img id="logo" src="googlelogo.png" alt="Google Logo">
                 <form action="https://www.image.google.com/search">   <!-- action contains the server script that will process data-->
                     <input class="search-bar" type="text" name="q">                <!-- name is the type of data the server is expecting-->
@@ -23,8 +25,9 @@
                         <input class="basic-button" type="submit" value="Image Search">  <!-- Search button for Image Search-->
                     </div>
                 </form>
+
             </div>
-            
         </div>
+
     </body>
 </html>

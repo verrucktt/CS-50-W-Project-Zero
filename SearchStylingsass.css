@@ -4,13 +4,13 @@
 * since: 05/27/2022
 * version: 0.01
 */
+/*Div that holds everything */
 .parent {
   width: 100vw;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 
+/*Div that holds links to other searches */
 .otherlinks {
   width: 100vw;
   height: auto;
@@ -24,11 +24,12 @@
   width: 100vw;
 }
 
+/*Google image logo */
 #logo {
   width: 250px;
 }
 
-.basic-button, .image-search-button, .feeling-lucky-button, .search-button {
+.basic-button, .search-button {
   width: auto;
   height: 40px;
   border-style: hidden;
@@ -37,20 +38,12 @@
   color: white;
 }
 
-.basic-button:hover, .basic-button.search-bar:focus, .image-search-button:hover, .image-search-button.search-bar:focus, .feeling-lucky-button:hover, .feeling-lucky-button.search-bar:focus, .search-button:hover, .search-button.search-bar:focus {
+.basic-button:hover, .basic-button.search-bar:focus, .search-button:hover, .search-button.search-bar:focus {
   border-style: solid;
   border-color: #606367;
 }
 
 .search-button {
-  margin-right: 5px;
-}
-
-.feeling-lucky-button {
-  margin-left: 5px;
-}
-
-.image-search-button {
   margin-right: 5px;
 }
 

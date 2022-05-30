@@ -13,14 +13,13 @@ $searchbar-border-color: #606367;
 $searchbar-background-color: #202124;
 
 
+/*Div that holds everything */
 .parent{
     width: 100vw;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
-
+/*Div that holds links to other searches */
 .otherlinks{
     width: 100vw;
     height: auto;
@@ -35,7 +34,7 @@ $searchbar-background-color: #202124;
     width: 100vw;
 }
 
-
+/*Google image logo */
 #logo{
     width: 250px;
 }
@@ -61,19 +60,6 @@ $searchbar-background-color: #202124;
     @extend .basic-button;
     margin-right: 5px
 }
-
-
-.feeling-lucky-button{
-    @extend .basic-button;
-    margin-left: 5px;
-}
-
-
-.image-search-button{
-    @extend .basic-button;
-    margin-right: 5px;
-}
-
 
 /* default styling for search bar*/
 .search-bar{
